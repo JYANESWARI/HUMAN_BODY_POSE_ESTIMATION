@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pose Detector</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #32a8d1, #68d0e6);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      background-color: #fff8f0;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .img:hover {
+      transform: scale(1.03);
+    }
+
+    .buttondiv {
+      margin-top: 25px;
+    }
+
+    button {
+      background-color: #0056b3;
+      color: #fff;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    button:hover {
+      background-color: #003f7f;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      background-color: #fff8f0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Live Human Pose Detection with Webcam</h1>
+    <img class="img" src="../static/human.jpeg" alt="Human Pose"/>
+    <div class="buttondiv">
+      <button onclick="window.location.href='/video_feed'">
+        Start Pose Detection
+      </button>
+    </div>
+  </div>
+</body>
+</html>
